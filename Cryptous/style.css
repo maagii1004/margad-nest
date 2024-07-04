@@ -3,32 +3,41 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    padding-top: 5px;
+    background-color: #1B004E;
 }
 nav {
-    height: 80px;
     background: #1B004E ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding-right: 100px;
+    padding-left: 40px;
+    
+}
+.all-logo {
+    display: flex
 }
 .logo {
     color: white;
     font-size: 24px;
-    padding: 0 2rem;
+    font-weight: 700;
 }
 nav a {
+    justify-content: center;
     text-decoration: none;
     color: white;
-    padding: 0 1.5rem;
+    padding: 0.3cm;
+    
 }
 .hero {
     background-color: #1B004E;
 }
 .hero-container {
     display: grid;
-    height: 90vh;
-    padding: 3rem;
+    grid-template-columns:60% 40%;
+    height: 55vh;
+    padding: 1rem;
 }
 .column-left {
     display: flex;
@@ -36,18 +45,20 @@ nav a {
     justify-content: center;
     align-items: flex-start;
     color: aliceblue;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
 }
 .column-left h1 {
 margin-bottom: 50px;
 font-size: 60px;
 line-height: 90px;
+font-weight: 700;
 }
 .column-left p {
     line-height: 28px;
     font-size: 17px;
+    padding-bottom: 50px;
 }
-button {
+.get {
     width: 191px;
     height: 47px;
     top: 466px;
@@ -58,11 +69,27 @@ button {
     background:#EB5757;
     border-radius: 50px;
 }
-
-
-
-
-
-
-
-
+.trade {
+    border-width: 3px;
+    border-radius: 50px;
+    border-color: #EB5757;
+    background-color: transparent;
+    width: 191px;
+    height: 47px;
+    top: 466px;
+    left: 135px;
+    font-size: 17px;
+    color:white;
+}
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+.hero-image {
+    width:270.53px;
+    height: 398.11px;
+    top: 140.02px;
+    left: 951.37px;
+}
