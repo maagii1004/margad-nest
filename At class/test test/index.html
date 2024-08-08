@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        #textDisplay {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="textDisplay"></div>
+
+    <script>
+        const text = "good morning, pinecone academy.";
+        const characters = text.split(''); // Split the text into an array of characters
+        const displayElement = document.getElementById('textDisplay');
+        let currentIndex = 0;
+        let adding = true;
+
+        function animateText() {
+            if (adding) {
+                // Display text by slicing the array from start to currentIndex
+                displayElement.textContent = characters.slice(0, currentIndex + 1).join('');
+                currentIndex++;
+                if (currentIndex >= characters.length) {
+                    adding = false;
+                    currentIndex--; // Adjust index to start removing from the end
+                }
+            } else {
+                // Reduce the length of the displayed text
+                displayElement.textContent = characters.slice(0, currentIndex).join('');
+                currentIndex--;
+                if (currentIndex < 0) {
+                    adding = true;
+                    currentIndex = 0; // Reset index to start adding again
+                }
+            }
+        }
+
+        setInterval(animateText, 100); // Adjust the interval time as needed
+    </script>
+</body>
+</html>

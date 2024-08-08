@@ -1,0 +1,19 @@
+#gameArea {
+  display: grid;
+grid-template-columns: repeat(10, 25px);
+grid-template-rows: repeat(10, 25px);
+align-items: center;
+justify-content: center;
+margin-top: 100px;
+}
+.tile {
+  width: 25px;
+  height: 25px;
+  border: 0.1px solid black;
+}
+.snake {
+  background-color: green;
+}
+.food {
+  background-color: yellow;
+}

@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ 
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.tile {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tile:hover {
+    transform: scale(1.05);;
+}
