@@ -33,6 +33,7 @@ draw();
 
 const moveSnake = (x1, y1) => {
     const newHead = {x: snake[0].x + x1, y: snake[0].y + y1};
+    
 
     if (newHead.x < 0) {
         newHead.x=9;
