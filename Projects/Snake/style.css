@@ -1,19 +1,122 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
 #gameArea {
   display: grid;
-grid-template-columns: repeat(10, 25px);
-grid-template-rows: repeat(10, 25px);
-align-items: center;
-justify-content: center;
-margin-top: 100px;
+  grid-template-columns: repeat(10, 25px);
+  grid-template-rows: repeat(10, 25px);
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px solid white;
+  background-color: rgba(230, 164, 72, 0.575);
+  padding: 10px;
 }
 .tile {
   width: 25px;
   height: 25px;
-  border: 0.1px solid black;
+  border: rgb(0, 0, 0) 0.6px solid;
+  border-radius: 5px;
 }
 .snake {
   background-color: green;
+  border-radius: 10px;
+  border: 1px black solid;
+  background-image:radial-gradient(#0d6921, #61a347,#f9ee89, #bf8d41 );
 }
 .food {
-  background-color: yellow;
+  background-color: red;
+  border-radius: 100px;
+  width: 17px;
+  height: 17px;
+  margin-left: 4px;
+}
+
+.snake-head {
+  background-image:radial-gradient(yellow, green, black);
+  border-radius: 10px;
+}
+
+.scoreDis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.6cm;
+}
+
+#replayBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;   
+  display: none;
+}
+
+#replayBtn button {
+  background-color: #61a347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#replayBtn button:hover {
+  background-color: #4e8337;
+}
+
+.border-sizes, .border-restrictor, .game-speed {
+  margin-top: 15px;
+  text-align: center;
+}
+.border-sizes p, .border-restrictor p, .game-speed p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #3b3f45;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #616872;
+}
+
+#gameOverMessage h2 {
+  margin-bottom: 10px;
+}
+
+#gameOverMessage button {
+  background-color: #61a347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#gameOverMessage button:hover {
+  background-color: #4e8337;
+}
+
+
+.hidden {
+  display: none;
 }

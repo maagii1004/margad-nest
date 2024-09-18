@@ -7,7 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="board"></div>
+    <div id="gameOverMessage" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Your final score is: <span id="finalScore"></span></p>
+        <button id="playAgain">Play Again</button>
+    </div>
+    <div class="game-container">
+        <div class="infos">
+            <div id="timer" class="timer">Time Left: 200s</div>
+            <div id="score" class="score">Score: 0</div>
+        </div>
+        <div class="board"></div>
+    </div>
+   
     <script src="./script.js"></script>
 </body>
 </html>

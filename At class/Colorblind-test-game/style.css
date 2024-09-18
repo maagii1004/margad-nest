@@ -8,24 +8,51 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: linear-gradient(45deg, #2c3e50, #8e44ad);
+    display: flex;
+    flex-direction: column;
 }
- 
+
+.gamecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer, .score {
+    font-size: 24px;
+    margin-bottom: 20px;
+    align-items: center;
+    color: white;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.hidden {
+    padding-bottom: 40px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+}
+
 .board {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
+    background-color: transparent;
 }
 
 .tile {
-    border: 5px solid #fff;
+    border: 1px black solid;
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
-    background-color: red;
+    background-color: transparent;
     transition: all 0.3s;
     cursor: pointer;
 }
 
 .tile:hover {
-    transform: scale(1.05);;
+    transform: scale(1.05);
 }

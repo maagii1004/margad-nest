@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="gameOverMessage" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Your final score is: <span id="finalScore"></span></p>
+        <button id="playAgain">Play Again</button>
+    </div>
+
     <div id="gameArea"></div>
+    <div id="score" class="scoreDis">Your score: 0</div>
+
+    <div class="border-sizes">
+        <p>Border sizes:</p>
+        <button>5x5</button>
+        <button>10x10</button>
+        <button>15x15</button>
+        <button>20x20</button>
+    </div>
+    
+    <div class="border-restrictor">
+        <p>Border Restriction:</p>
+        <button>Enable border Restriction</button>
+        <button>Disable Border Restriction</button>
+    </div>
+    
+    <div class="game-speed">
+        <p>Change the game speed:</p>
+        <input type="number" placeholder="Speed in ms (min: 50)">
+    </div>
+
     <script src="script.js"></script>
 </body> 
 </html>

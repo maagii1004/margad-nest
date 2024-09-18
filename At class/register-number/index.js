@@ -1,4 +1,4 @@
-const register = "УЖ07300479";
+const register = "ЗЕ75020108";
 const regions = {
   А: "Архангай",
   Б: "Баян-Өлгий",

@@ -24,13 +24,6 @@ document.querySelector("#eight").addEventListener("click", () => handleNumberCli
 document.querySelector("#nine").addEventListener("click", () => handleNumberClick(9));
 document.querySelector("#point").addEventListener("click", () => handleNumberClick("."));
 
-// logic:
-// first input comes in.
-// You write the nunber.
-// After that you press the operation button.
-// when you press the operation button, the number in first input is saved.
-// then the second input comes in and you write your number again.
-// after you write it and press equals, it operates and give the result.
 
 const handleOperatorClick = (op) => {
    firstNum = display.value;

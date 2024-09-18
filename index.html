@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Linear Gradient</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        .animated-gradient {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(90deg, #ff7f50, #1e90ff, #32cd32);
+            background-size: 600% 600%;
+            animation: gradientAnimation 8s ease infinite;
+            border-radius: 20px;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-gradient"></div>
+</body>
+</html>
